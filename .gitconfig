@@ -1,0 +1,11 @@
+[user]
+	name = Chris Rittelmeyer
+	email = github.10.iamchris@spamgourmet.com
+[core]
+	editor = '/Applications/Sublime Text 2' -w
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
