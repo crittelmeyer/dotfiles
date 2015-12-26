@@ -2,8 +2,17 @@
 
 ## Alias/Function Cheat Sheet:
 
+### Directories (via .oh-my-zsh/lib/directories.sh)
+* d      =  lists recently used directories
+* md     =  mkdir
+* cd +n	 =  switch to directory number n
+* ..     =  cd ..
+* ...    =  cd ../..
+* /      =  cd /
+
 ### git (via .oh-my-zsh/plugins/git/git.plugin.zsh)
 * g     =  git
+* gst   =  git status
 * ga    =  git add
 * gb    =  git branch
 * gcb   =  git checkout -b
@@ -27,6 +36,14 @@
 * tl    =  tmux list-sessions
 * tksv  =  tmux kill-server
 * tkss  =  tmux kill-session -t
+
+### jira (via .oh-my-zsh/plugins/jira/jira.plugin.zsh)
+* jira new                  ==>  opens a new issue
+* jira dashboard            ==>  opens your JIRA dashboard
+* jira reported [username]  ==>  queries for issues reported by a user
+* jira assigned [username]  ==>  queries for issues assigned to a user
+* jira ABC-123              ==>  opens an existing issue
+* jira ABC-123 m            ==>  opens an existing issue for adding a comment
 
 ### Thefuck (via .oh-my-zsh/plugins/thefuck/thefuck.plugin.zsh)
 * [Esc]x2 = fuck
