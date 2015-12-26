@@ -1,3 +1,49 @@
-Dotfiles! All the dotfiles I need.
+# Dotfiles! All the dotfiles I need.
 
-Todo: Add webstorm/st2 files...?
+## Alias/Function Cheat Sheet:
+
+### git (via .oh-my-zsh/plugins/git/git.plugin.zsh)
+* g     =  git
+* ga    =  git add
+* gb    =  git branch
+* gcb   =  git checkout -b
+* gcm   =  git checkout master
+* gd    =  git diff
+* gcp   =  git cherry-pick
+* gl    =  git pull
+* gp    =  git push
+* grbi  =  git rebase -i
+* gsta  =  git stash
+* gstp  =  git stash pop
+* gstd  =  git stash drop
+* gstl  =  git stash list
+
+* current_branch      ==> returns name of current branch
+* current_repository  ==> returns names of current remotes
+
+### Tmux (via .oh-my-zsh/plugins/tmux/tmux.plugin.zsh)
+* ta    =  tmux attach -t
+* ts    =  tmux new-session -s
+* tl    =  tmux list-sessions
+* tksv  =  tmux kill-server
+* tkss  =  tmux kill-session -t
+
+### Thefuck (via .oh-my-zsh/plugins/thefuck/thefuck.plugin.zsh)
+* [Esc]x2 = fuck
+
+### zsh_reload (via .oh-my-zsh/plugins/zsh_reload/zsh_reload.plugin.zsh)
+* src  ==> sources ~/.zshrc, clears cache
+
+### wakeonlan (via .oh-my-zsh/plugins/wakeonlan/wakeonlan.plugin.zsh)
+* wake [machine alias]  ==> uses wakeonlan to wake machine defined in ~/.wakeonlan/[machine alias]
+
+### web_search (via .oh-my-zsh/plugins/web_search/web-search.plugin.zsh)
+* google [search terms]  ==> does google search
+* github [search terms]  ==> does github search
+
+## Other Scripts:
+
+### iTerm 2 img/download utils (via https://www.iterm2.com/images.html)
+* imgcat [img path]      ==> displays img in terminal
+* imgls $([ls command])  ==> displays file list with img thumbnails for img files
+* divider [img path]     ==> displays given img as divider (stretched 100% wide)
