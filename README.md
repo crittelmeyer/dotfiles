@@ -59,6 +59,13 @@
 * github [search terms]  ==> does github search
 
 ## vim shortcuts/plugins
+* Ctrl-n      ==>  toggle NERDTree
+* :5>>        ==>  indent next 5 lines
+* :4,8>       ==>  indent lines 4 to 8, inclusive
+* Ctrl-t      ==>  insert indent at start of line
+* Ctrl-d      ==>  remove indent at start of line
+* <Leader>ev  ==>  edit .vimrc
+* <Leader>sv  ==>  source .vimrc
 
 ## tmux shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
