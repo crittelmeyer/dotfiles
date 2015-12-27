@@ -1,6 +1,6 @@
 # Dotfiles! All the dotfiles I need.
 
-## Alias/Function Cheat Sheet:
+## oh-my-zsh Alias/Function Cheat Sheet:
 
 ### Directories (via .oh-my-zsh/lib/directories.sh)
 * d      =  lists recently used directories
@@ -57,6 +57,11 @@
 ### web_search (via .oh-my-zsh/plugins/web_search/web-search.plugin.zsh)
 * google [search terms]  ==> does google search
 * github [search terms]  ==> does github search
+
+## vim shortcuts/plugins
+
+## tmux shortcuts
+* See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
 
 ## Other Scripts:
 
