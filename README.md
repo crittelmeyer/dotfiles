@@ -66,7 +66,8 @@
 * Ctrl-d         ==>  remove indent at start of line
 * <Leader>ev     ==>  edit .vimrc
 * <Leader>sv     ==>  source .vimrc
-* Ctrl-W + Arrow ==> change focused pane
+* Ctrl-W Arrow   ==>  change focused pane in direction of arrow
+* Ctrl-W W       ==>  change focused pane to next
 
 ## tmux shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
