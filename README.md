@@ -69,6 +69,8 @@
 * Ctrl-W Arrow   ==>  change focused pane in direction of arrow
 * Ctrl-W W       ==>  change focused pane to next
 
+NOTE: Not a shortcut, but important -> when pasting from the apple pasteboard and autoindent is enabled, your text gets messed up. To avoid that, first type `:set paste`, then paste the thing, then `:set unpaste`
+
 ### NERDTree shortcuts
 * cd                ==> change working directory to currently highlighted
 * :Bookmark [name]  ==> create new bookmark for currently highlighted
