@@ -59,25 +59,7 @@
 * github [search terms]  ==> does github search
 
 ## vim shortcuts/plugins
-* Ctrl-n         ==>  toggle NERDTree
-* :5>>           ==>  indent next 5 lines
-* :4,8>          ==>  indent lines 4 to 8, inclusive
-* Ctrl-t         ==>  insert indent at start of line
-* Ctrl-d         ==>  remove indent at start of line
-* <Leader>ev     ==>  edit .vimrc
-* <Leader>sv     ==>  source .vimrc
-* Ctrl-W Arrow   ==>  change focused pane in direction of arrow
-* Ctrl-W W       ==>  change focused pane to next
-
-NOTE: Not a shortcut, but important -> when pasting from the apple pasteboard and autoindent is enabled, your text gets messed up. To avoid that, first type `:set paste`, then paste the thing, then `:set unpaste`
-
-### NERDTree shortcuts
-* cd                ==> change working directory to currently highlighted
-* :Bookmark [name]  ==> create new bookmark for currently highlighted
-* B                 ==> view list of bookmarks
-* r                 ==> refresh to show file/dir changes
-* s                 ==> show in a v split
-* i                 ==> show in a h split
+* See https://gist.github.com/crittelmeyer/206caffcb860e2ef4052
 
 ## tmux shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
