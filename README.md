@@ -40,5 +40,32 @@
 ## tmux cheatsheet/shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
 
+## tmuxinator cheatsheet/shortcuts
+TODO
+
+## rbenv cheatsheet
+TODO
+
+## linux cheatsheet/shortcuts
+TODO
+
+## docker cheatsheet/shortcuts
+TODO
+
+## docker-compose cheatsheet/shortcuts
+TODO
+
+## vagrant cheatsheet/shortcuts
+TODO
+
+## puppet cheatsheet/shortcuts
+TODO
+
+## rails cheatsheet/shortcuts
+TODO
+
+## node cheatsheet/shortcuts
+TODO
+
 ## other scripts:
-* See https://github.com/crittelmeyer/dotfiles/
+* See https://github.com/crittelmeyer/dotfiles/bin/
