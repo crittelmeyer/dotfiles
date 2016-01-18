@@ -10,33 +10,6 @@
 * ...    =  cd ../..
 * /      =  cd /
 
-### git (via .oh-my-zsh/plugins/git/git.plugin.zsh)
-* g     =  git
-* gst   =  git status
-* ga    =  git add
-* gb    =  git branch
-* gcb   =  git checkout -b
-* gcm   =  git checkout master
-* gd    =  git diff
-* gcp   =  git cherry-pick
-* gl    =  git pull
-* gp    =  git push
-* grbi  =  git rebase -i
-* gsta  =  git stash
-* gstp  =  git stash pop
-* gstd  =  git stash drop
-* gstl  =  git stash list
-
-* current_branch      ==> returns name of current branch
-* current_repository  ==> returns names of current remotes
-
-### Tmux (via .oh-my-zsh/plugins/tmux/tmux.plugin.zsh)
-* ta    =  tmux attach -t
-* ts    =  tmux new-session -s
-* tl    =  tmux list-sessions
-* tksv  =  tmux kill-server
-* tkss  =  tmux kill-session -t
-
 ### jira (via .oh-my-zsh/plugins/jira/jira.plugin.zsh)
 * jira new                  ==>  opens a new issue
 * jira dashboard            ==>  opens your JIRA dashboard
@@ -58,14 +31,41 @@
 * google [search terms]  ==> does google search
 * github [search terms]  ==> does github search
 
-## vim shortcuts/plugins
+## git cheatsheet/shortcuts
+* See https://gist.github.com/crittelmeyer/140288b14a182706252b
 
-## tmux shortcuts
+## vim cheatsheet/shortcuts/plugins
+* See https://gist.github.com/crittelmeyer/206caffcb860e2ef4052
+
+## tmux cheatsheet/shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
 
-## Other Scripts:
+## tmuxinator cheatsheet/shortcuts
+TODO
 
-### iTerm 2 img/download utils (via https://www.iterm2.com/images.html)
-* imgcat [img path]      ==> displays img in terminal
-* imgls $([ls command])  ==> displays file list with img thumbnails for img files
-* divider [img path]     ==> displays given img as divider (stretched 100% wide)
+## rbenv cheatsheet
+TODO
+
+## linux cheatsheet/shortcuts
+TODO
+
+## docker cheatsheet/shortcuts
+TODO
+
+## docker-compose cheatsheet/shortcuts
+TODO
+
+## vagrant cheatsheet/shortcuts
+TODO
+
+## puppet cheatsheet/shortcuts
+TODO
+
+## rails cheatsheet/shortcuts
+TODO
+
+## node cheatsheet/shortcuts
+TODO
+
+## other scripts:
+* See https://github.com/crittelmeyer/dotfiles/bin/
