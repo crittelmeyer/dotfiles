@@ -54,6 +54,36 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install ctags
 
+# Install development tools.
+brew install python
+brew install rbenv ruby-build
+brew install ghc cabal-install
+brew install phantomjs
+brew install node
+
+# pip modules
+pip install flake8
+
+# node modules
+npm install -g eslint
+
+# ruby versions
+rbenv install 2.0.0-p645
+rbenv install 2.3.0
+
+# gems
+gem install bundler
+gem install rails
+gem install pry
+gem install byebug
+gem install unicorn
+gem install rspec
+gem install guard
+gem install teaspoon-mocha
+gem install rubocop
+gem install scss_lint
+gem install haml_lint
+
 # Install other useful binaries.
 brew install ack
 brew install git

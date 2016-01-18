@@ -19,7 +19,7 @@
 * jira ABC-123 m            ==>  opens an existing issue for adding a comment
 
 ### Thefuck (via .oh-my-zsh/plugins/thefuck/thefuck.plugin.zsh)
-* [Esc]x2 = fuck
+* [Esc]x2 = fuck = try to fix last command
 
 ### zsh_reload (via .oh-my-zsh/plugins/zsh_reload/zsh_reload.plugin.zsh)
 * src  ==> sources ~/.zshrc, clears cache
