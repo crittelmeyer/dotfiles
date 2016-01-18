@@ -1,0 +1,11 @@
+# alias for editing .zshrc file
+alias zshconfig="vim ~/.zshrc"
+
+# alias for editing .oh-my-zsh file
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# shortcuts for docker tools
+alias fig=docker-compose
+alias dm=docker-machine
+alias dmrd=docker-machine restart default
+
