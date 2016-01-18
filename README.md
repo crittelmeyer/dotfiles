@@ -30,13 +30,6 @@
 * current_branch      ==> returns name of current branch
 * current_repository  ==> returns names of current remotes
 
-### Tmux (via .oh-my-zsh/plugins/tmux/tmux.plugin.zsh)
-* ta    =  tmux attach -t
-* ts    =  tmux new-session -s
-* tl    =  tmux list-sessions
-* tksv  =  tmux kill-server
-* tkss  =  tmux kill-session -t
-
 ### jira (via .oh-my-zsh/plugins/jira/jira.plugin.zsh)
 * jira new                  ==>  opens a new issue
 * jira dashboard            ==>  opens your JIRA dashboard
