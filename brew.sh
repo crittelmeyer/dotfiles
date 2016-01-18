@@ -55,10 +55,14 @@ brew install homebrew/dupes/screen
 brew install ctags
 
 # Install development tools.
+brew install python
 brew install rbenv ruby-build
 brew install ghc cabal-install
 brew install phantomjs
 brew install node
+
+# pip modules
+pip install flake8
 
 # node modules
 npm install -g eslint
@@ -78,6 +82,7 @@ gem install guard
 gem install teaspoon-mocha
 gem install rubocop
 gem install scss_lint
+gem install haml_lint
 
 # Install other useful binaries.
 brew install ack
