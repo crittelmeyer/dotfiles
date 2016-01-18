@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-rspec"]
 	path = .vim/bundle/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec.git
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
