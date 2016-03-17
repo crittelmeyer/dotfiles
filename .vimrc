@@ -116,13 +116,33 @@ else
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 endif
 
-" custom key mappings
-source ~/.vim/.map.vimrc
+" most standard terminals don't differentiate <CR> and
+" <Shift-CR> or <Ctrl-CR>. To allow this, I changed key settings
+" in iTerm2 to send escape sequences when these keys are pressed
+if &term =~ "xterm" || &term =~ "screen" || &term =~ "builtin_gui"
+  " Ctrl-Enter
+  set  <F13>=[25~
+  map  <F13> <C-CR>
+  map! <F13> <C-CR>
+
+  " Shift-Enter
+  set  <F14>=[27~
+  map  <F14> <S-CR>
+  map! <F14> <S-CR>
+
+  " Ctrl-Space
+  set  <F15>=[29~
+  map  <F15> <C-Space>
+  map! <F15> <C-Space>
+endif
 
 " Plugins
 
 " install pathogen plugins
 execute pathogen#infect()
+
+" add space between nerd comment delimiter and first char of comment
+let NERDSpaceDelims=1
 
 " CtrlP
 " Setup some default ignores
@@ -251,6 +271,9 @@ autocmd FileType ruby
   \ elseif !exists('b:dispatch') |
   \   let b:dispatch = 'ruby -wc %' |
   \ endif
+
+" custom key mappings
+source ~/.vim/.map.vimrc
 
 " custom plugin key mappings
 source ~/.vim/.plugin_map.vimrc
