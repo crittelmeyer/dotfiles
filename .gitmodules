@@ -100,3 +100,9 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = git@github.com:mattn/webapi-vim.git
+[submodule "powerline/tmux-powerline"]
+	path = powerline/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
+[submodule "powerline/fonts"]
+	path = powerline/fonts
+	url = https://github.com/powerline/fonts.git
