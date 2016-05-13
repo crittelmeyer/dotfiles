@@ -65,17 +65,8 @@ brew install gpg
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-# pip modules
-pip install flake8
-
-# node modules
-npm install -g bower
-npm install -g cypress-cli
-npm install -g deployd
-npm install -g eslint
-npm install -g mocha
-
 # ruby versions
+rvm get head
 rvm install 2.0.0-p645
 rvm install 2.3.0
 rvm use 2.3.0
@@ -92,6 +83,16 @@ gem install teaspoon-mocha
 gem install rubocop
 gem install scss_lint
 gem install haml_lint
+
+# pip modules
+pip install flake8
+
+# node modules
+npm install -g bower
+npm install -g cypress-cli
+npm install -g deployd
+npm install -g eslint
+npm install -g mocha
 
 # Install other useful binaries.
 brew install zsh
