@@ -1,7 +1,7 @@
 # Dotfiles! All the dotfiles I need.
 
 ## Installation
-### Highly customized instructions for setting up a new mac to my liking
+Highly customized instructions for setting up a new mac to my liking
 
 * Install Chrome               => https://www.google.com/chrome/browser/desktop/
 * Install Spotify              => https://www.spotify.com/us/download/mac/
@@ -14,10 +14,17 @@
 * Install iTerm 2              => https://www.iterm2.com/4
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
-* Install more tools           => https://github.com/crittelmeyer/dotfiles/tree/master/bin
-
-* Run 
+* Install self-hosted tools    => https://github.com/crittelmeyer/dotfiles/tree/master/bin
+*****
+* Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) to install more common tools
+* Run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
+* Create ~/Repos directory
+* Pull this dotfiles repo
+* TODO: do we need to update/install zsh 5.2 here? Or did something in brew.sh do that for us?
+* Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) to sync dotfiles with home dir
+*****
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
+* TODO: Instructions for updating iTerm prefs
 
 ## oh-my-zsh Alias/Function Cheat Sheet:
 
