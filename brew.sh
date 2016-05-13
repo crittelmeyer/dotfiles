@@ -66,7 +66,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # ruby versions
-rvm get head
+rvm get stable --auto-dotfiles
 rvm install 2.0.0-p645
 rvm install 2.3.0
 rvm use 2.3.0
