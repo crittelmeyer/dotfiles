@@ -111,5 +111,9 @@ brew install tree
 brew install webkit2png
 brew install thefuck
 
+# Install tmux/tmuxinator
+brew install tmux
+gem install tmuxinator
+
 # Remove outdated versions from the cellar.
 brew cleanup
