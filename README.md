@@ -1,9 +1,10 @@
 # Dotfiles! All the dotfiles I need.
 
 ## Installation
-### Some highly customized instructions for setting up a new mac os terminal to my liking
+### Highly customized instructions for setting up a new mac os terminal to my liking
 
-* Install brew
+* Install iTerm 2   => https://www.iterm2.com/
+* Install brew      => http://brew.sh/
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 
 ## oh-my-zsh Alias/Function Cheat Sheet:
