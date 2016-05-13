@@ -62,10 +62,10 @@ TODO
 TODO
 
 ## rails cheatsheet/shortcuts
-TODO
+* See https://gist.github.com/crittelmeyer/a91a911e8886fc27daf6
 
 ## node cheatsheet/shortcuts
 TODO
 
 ## other scripts:
-* See https://github.com/crittelmeyer/dotfiles/bin/
+* See https://github.com/crittelmeyer/dotfiles/tree/master/bin
