@@ -53,8 +53,14 @@ TODO
 ## rvm cheatsheet
 https://gist.github.com/crittelmeyer/78cf2c167c963d279ae8
 
-## linux cheatsheet/shortcuts
-TODO
+## linux tools
+https://gist.github.com/crittelmeyer/6acae5aeec3e1ec210ce
+
+## rails cheatsheet/shortcuts
+* See https://gist.github.com/crittelmeyer/a91a911e8886fc27daf6
+
+## node/npm cheatsheet/shortcuts
+https://gist.github.com/crittelmeyer/e3e8f58f5808fca8ba2aeda1509a877a
 
 ## docker cheatsheet/shortcuts
 TODO
@@ -66,12 +72,6 @@ TODO
 TODO
 
 ## puppet cheatsheet/shortcuts
-TODO
-
-## rails cheatsheet/shortcuts
-* See https://gist.github.com/crittelmeyer/a91a911e8886fc27daf6
-
-## node cheatsheet/shortcuts
 TODO
 
 ## other scripts:
