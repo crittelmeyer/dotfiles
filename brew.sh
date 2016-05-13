@@ -74,6 +74,7 @@ npm install -g mocha
 # ruby versions
 rvm install 2.0.0-p645
 rvm install 2.3.0
+rvm use 2.3.0
 
 # gems
 gem install bundler
