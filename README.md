@@ -1,5 +1,11 @@
 # Dotfiles! All the dotfiles I need.
 
+## Installation
+### Some highly customized instructions for setting up a new mac os terminal to my liking
+
+* Install brew
+* Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
+
 ## oh-my-zsh Alias/Function Cheat Sheet:
 
 ### Directories (via .oh-my-zsh/lib/directories.sh)
@@ -43,8 +49,8 @@
 ## tmuxinator cheatsheet/shortcuts
 TODO
 
-## rbenv cheatsheet
-TODO
+## rvm cheatsheet
+https://gist.github.com/crittelmeyer/78cf2c167c963d279ae8
 
 ## linux cheatsheet/shortcuts
 TODO
