@@ -69,6 +69,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 rvm get stable --auto-dotfiles
 rvm install 2.0.0-p645
 rvm install 2.3.0
+source /usr/local/rvm/scripts/rvm
 rvm use 2.3.0
 
 # gems
