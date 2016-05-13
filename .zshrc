@@ -57,7 +57,7 @@ fpath=(~/.zsh $fpath)
 
 eval "$(thefuck --alias)"
 
-eval "$(rbenv init -)"
+source /usr/local/rvm/scripts/rvm
 
 source $ZSH/oh-my-zsh.sh
 
