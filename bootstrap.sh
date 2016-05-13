@@ -9,6 +9,8 @@ git pull origin master;
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+		--exclude "brew.sh" --exclude "brew-ctf.sh" --exclude "bin/" \
+		--exclude "legacy/" --exclude "powerline/" --exclude "tmux-powerline/" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
