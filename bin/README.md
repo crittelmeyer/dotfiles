@@ -10,3 +10,6 @@
 
 ## Fun Scripts
     $ matrix              => "The Matrix"-esque screen saver script
+
+
+TODO: Remove imgcat, since it now gets installed when you "Install shell integration & utilities" for iTerm.
