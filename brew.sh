@@ -95,8 +95,12 @@ npm install -g deployd
 npm install -g eslint
 npm install -g mocha
 
+# zshell
+brew install --without-etcdir zsh
+bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+chsh -s /usr/local/bin/zsh
+
 # Install other useful binaries.
-brew install zsh
 brew install ack
 brew install git
 brew install git-lfs
@@ -109,6 +113,7 @@ brew install rename
 brew install speedtest_cli
 brew install tree
 brew install webkit2png
+brew install thefuck
 
 # Remove outdated versions from the cellar.
 brew cleanup
