@@ -87,6 +87,7 @@ gem install haml_lint
 
 # pip modules
 pip install flake8
+pip install git+git://github.com/Lokaltog/powerline
 
 # node modules
 npm install -g bower
