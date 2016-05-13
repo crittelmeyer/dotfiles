@@ -14,6 +14,7 @@
 * Install iTerm 2              => https://www.iterm2.com/4
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
+* Install more tools           => https://github.com/crittelmeyer/dotfiles/tree/master/bin
 
 * Run 
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
@@ -27,14 +28,6 @@
 * ..     =  cd ..
 * ...    =  cd ../..
 * /      =  cd /
-
-### jira (via .oh-my-zsh/plugins/jira/jira.plugin.zsh)
-* jira new                  ==>  opens a new issue
-* jira dashboard            ==>  opens your JIRA dashboard
-* jira reported [username]  ==>  queries for issues reported by a user
-* jira assigned [username]  ==>  queries for issues assigned to a user
-* jira ABC-123              ==>  opens an existing issue
-* jira ABC-123 m            ==>  opens an existing issue for adding a comment
 
 ### Thefuck (via .oh-my-zsh/plugins/thefuck/thefuck.plugin.zsh)
 * [Esc]x2 = fuck = try to fix last command
@@ -55,11 +48,11 @@
 ## vim cheatsheet/shortcuts/plugins
 * See https://gist.github.com/crittelmeyer/206caffcb860e2ef4052
 
-## tmux cheatsheet/shortcuts
+## tmux/tmuxinator cheatsheet/shortcuts
 * See https://gist.github.com/crittelmeyer/5924454be991ed61d6d7
 
-## tmuxinator cheatsheet/shortcuts
-TODO
+## jira cheatsheet
+* See https://gist.github.com/crittelmeyer/5e1c43f058c03940f569715d99639f47
 
 ## rvm cheatsheet
 https://gist.github.com/crittelmeyer/78cf2c167c963d279ae8
@@ -81,6 +74,3 @@ TODO
 
 ## puppet cheatsheet/shortcuts
 TODO
-
-## other scripts:
-* See https://github.com/crittelmeyer/dotfiles/tree/master/bin
