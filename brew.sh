@@ -56,10 +56,13 @@ brew install ctags
 
 # Install development tools.
 brew install python
-brew install rvm
 brew install ghc cabal-install
 brew install phantomjs
 brew install node
+
+# Install rvm
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # pip modules
 pip install flake8
