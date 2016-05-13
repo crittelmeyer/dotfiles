@@ -90,6 +90,7 @@ gem install scss_lint
 gem install haml_lint
 
 # Install other useful binaries.
+brew install zsh
 brew install ack
 brew install git
 brew install git-lfs
