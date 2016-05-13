@@ -21,6 +21,7 @@ Highly customized instructions for setting up a new mac to my liking
 * Create ~/Repos directory
 * Pull this dotfiles repo
 * TODO: do we need to update/install zsh 5.2 here? Or did something in brew.sh do that for us?
+* TODO: does the bootstrap script properly ignore unneeded files?
 * Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) to sync dotfiles with home dir
 *****
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
