@@ -12,7 +12,8 @@ function doIt() {
 		--exclude "brew.sh" --exclude "brew-ctf.sh" --exclude "bin/" \
 		--exclude "legacy/" --exclude "powerline/" --exclude "tmux-powerline/" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
-	source ~/.bash_profile;
+	source ~/.zshenv;
+	source ~/.zshrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
