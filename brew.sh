@@ -115,6 +115,7 @@ brew install fortune
 
 # Install tmux/tmuxinator
 brew install tmux
+brew install reattach-to-user-namespace
 gem install tmuxinator
 
 # Remove outdated versions from the cellar.
