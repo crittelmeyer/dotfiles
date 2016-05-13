@@ -56,7 +56,7 @@ brew install ctags
 
 # Install development tools.
 brew install python
-brew install rbenv ruby-build
+brew install rvm
 brew install ghc cabal-install
 brew install phantomjs
 brew install node
@@ -65,11 +65,15 @@ brew install node
 pip install flake8
 
 # node modules
+npm install -g bower
+npm install -g cypress-cli
+npm install -g deployd
 npm install -g eslint
+npm install -g mocha
 
 # ruby versions
-rbenv install 2.0.0-p645
-rbenv install 2.3.0
+rvm install 2.0.0-p645
+rvm install 2.3.0
 
 # gems
 gem install bundler
