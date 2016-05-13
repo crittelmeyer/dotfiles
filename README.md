@@ -15,15 +15,15 @@ Highly customized instructions for setting up a new mac to my liking
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
 * Install self-hosted tools    => https://github.com/crittelmeyer/dotfiles/tree/master/bin
-*****
-* Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) to install more common tools
-* Run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
+
 * Create ~/Repos directory
 * Pull this dotfiles repo
+* Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) to install more common tools
+* Run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
 * TODO: do we need to update/install zsh 5.2 here? Or did something in brew.sh do that for us?
 * TODO: does the bootstrap script properly ignore unneeded files?
 * Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) to sync dotfiles with home dir
-*****
+
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 * TODO: Instructions for updating iTerm prefs
 
