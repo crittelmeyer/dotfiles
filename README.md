@@ -1,10 +1,20 @@
 # Dotfiles! All the dotfiles I need.
 
 ## Installation
-### Highly customized instructions for setting up a new mac os terminal to my liking
+### Highly customized instructions for setting up a new mac to my liking
 
-* Install iTerm 2   => https://www.iterm2.com/
-* Install brew      => http://brew.sh/
+* Install Chrome               => https://www.google.com/chrome/browser/desktop/
+* Install Spotify              => https://www.spotify.com/us/download/mac/
+* Install Postman              => https://www.getpostman.com/
+* Install Slack                => https://slack.com/downloads
+* Install Sublime Text         => https://www.sublimetext.com/download
+* Install Atom                 => https://atom.io/
+* Install Dropbox              => https://www.dropbox.com/en_GB/downloading?os=mac
+* Install Gyazo and Gyazo GIF  => https://gyazo.com/download
+* Install iTerm 2              => https://www.iterm2.com/4
+* Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+* Install Homebrew             => http://brew.sh/
+
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 
 ## oh-my-zsh Alias/Function Cheat Sheet:
