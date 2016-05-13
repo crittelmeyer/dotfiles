@@ -15,6 +15,7 @@
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
 
+* Run 
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 
 ## oh-my-zsh Alias/Function Cheat Sheet:
@@ -72,10 +73,7 @@ https://gist.github.com/crittelmeyer/6acae5aeec3e1ec210ce
 ## node/npm cheatsheet/shortcuts
 https://gist.github.com/crittelmeyer/e3e8f58f5808fca8ba2aeda1509a877a
 
-## docker cheatsheet/shortcuts
-TODO
-
-## docker-compose cheatsheet/shortcuts
+## docker/docker-compose/docker-machine cheatsheet/shortcuts
 TODO
 
 ## vagrant cheatsheet/shortcuts
