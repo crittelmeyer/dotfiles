@@ -110,6 +110,7 @@ brew install speedtest_cli
 brew install tree
 brew install webkit2png
 brew install thefuck
+brew install fortune
 
 # Install tmux/tmuxinator
 brew install tmux
