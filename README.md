@@ -12,6 +12,7 @@ Highly customized instructions for setting up a new mac to my liking
 * Install Dropbox              => https://www.dropbox.com/en_GB/downloading?os=mac
 * Install Gyazo and Gyazo GIF  => https://gyazo.com/download
 * Install iTerm 2 (> 2.1)      => https://www.iterm2.com/4
+* Install Karabiner            => https://pqrs.org/osx/karabiner/
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
 * Install self-hosted tools    => https://github.com/crittelmeyer/dotfiles/tree/master/bin
