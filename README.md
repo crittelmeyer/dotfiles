@@ -11,21 +11,36 @@ Highly customized instructions for setting up a new mac to my liking
 * Install Atom                 => https://atom.io/
 * Install Dropbox              => https://www.dropbox.com/en_GB/downloading?os=mac
 * Install Gyazo and Gyazo GIF  => https://gyazo.com/download
-* Install iTerm 2              => https://www.iterm2.com/4
+* Install iTerm 2 (> 2.1)      => https://www.iterm2.com/4
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
 * Install self-hosted tools    => https://github.com/crittelmeyer/dotfiles/tree/master/bin
 * -----
+* Open iTerm
+* Make iTerm your default terminal in the top menu: iTerm > Make iTerm Default Term
+* Install shell integration & utilities for iTerm in the top menu: iTerm > Install Shell Integration & Utilities
+* Restart iTerm
+* Copy your private and public ssh key(s) to ~/.ssh, then `eval "$(ssh-agent -s)"`, then `ssh-add ~/.ssh/[key]`
 * Create ~/Repos directory
 * Pull this dotfiles repo
-* Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) to install more common tools
-* Run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
-* TODO: do we need to update/install zsh 5.2 here? Or did something in brew.sh do that for us?
-* TODO: does the bootstrap script properly ignore unneeded files?
-* Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) to sync dotfiles with home dir
+* Change owner of brew executable to root -> `chown root /usr/local/bin/brew`
+* Make `brew.sh` executable -> `chmod +x brew.sh`
+* Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) as sudo to install common tools
+* Optionally run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
+* Change owner of brew executable back to current user
+* Install oh my zsh: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/crittelmeyer/dotfiles/master/.oh-my-zsh/tools/install.sh)"`
+* Run `git submodule init`, `git submodule sync`, `git submodule update`
+* Copy powerline directory to ~/Repos/
+* Follow README instructions for [powerline](https://github.com/crittelmeyer/dotfiles/tree/master/powerline)
+* Follow README instructions for [tmux-powerline](https://github.com/crittelmeyer/dotfiles/tree/master/tmux-powerline)
+* Update iTerm fonts in preferences to use one of the powerline fonts you installed above
+* Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) as sudo to sync dotfiles/home dir
 * -----
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
-* TODO: Instructions for updating iTerm prefs
+* Add special key mappings to iTerm for vim:
+*   Ctrl+Space     => Send escape sequence: Esc+[29~
+*   Shift+Return   => Send escape sequence: Esc+[27~
+*   Ctrl+Return    => Send escape sequence: Esc+[25~
 
 ## oh-my-zsh Alias/Function Cheat Sheet:
 
