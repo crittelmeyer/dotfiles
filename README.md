@@ -40,6 +40,22 @@ Highly customized instructions for setting up a new mac to my liking
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 * Under iTerm Preferences > Keys > Hotkey, check "Show/hide iTerm2 with a system-wide hotkey" (leave default Alt+Space)
 * Under iTerm Preferences > Advanced > Mouse, change "Scroll wheel sends arrow keys..." to "Yes"
+* Under Karabiner Preferences > Misc & Uninstall > Custom Setting, click "Open private.xml" and save the following:
+```
+<?xml version="1.0"?>
+    <root>
+    <item>
+        <name>Ctrl Freak</name>
+        <identifier>private.double_ctrl_to_escape</identifier>
+        <autogen>
+            __DoublePressModifier__
+            KeyCode::CONTROL_L, KeyCode::CONTROL_L,
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+</root>
+```
+* Under Karabiner Preferences > Change Key, check "Ctrl Freak" (this maps Ctrl+Ctrl to Esc for easy vim escapes)
 * Add special key mappings to iTerm for vim:
 *   Ctrl+Space     => Send escape sequence: Esc+[29~
 *   Shift+Return   => Send escape sequence: Esc+[27~
