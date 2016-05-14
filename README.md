@@ -21,7 +21,7 @@ Highly customized instructions for setting up a new mac to my liking
 * Make iTerm your default terminal in the top menu: iTerm > Make iTerm Default Term
 * Install shell integration & utilities for iTerm in the top menu: iTerm > Install Shell Integration & Utilities
 * Restart iTerm
-* Copy your private and public ssh key(s) to ~/.ssh, then `eval "$(ssh-agent -s)"`, then `ssh-add ~/.ssh/[key]`
+* Copy your private and public ssh key(s) to ~/.ssh, then `eval "$(ssh-agent -s)"`, then `ssh-add -K ~/.ssh/[key]`
 * Create ~/Repos directory
 * Pull this dotfiles repo
 * Change owner of brew executable to root -> `chown root /usr/local/bin/brew`
