@@ -12,6 +12,7 @@ Highly customized instructions for setting up a new mac to my liking
 * Install Dropbox              => https://www.dropbox.com/en_GB/downloading?os=mac
 * Install Gyazo and Gyazo GIF  => https://gyazo.com/download
 * Install iTerm 2 (> 2.1)      => https://www.iterm2.com/4
+* Install Karabiner            => https://pqrs.org/osx/karabiner/
 * Install XCode                => https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 * Install Homebrew             => http://brew.sh/
 * Install self-hosted tools    => https://github.com/crittelmeyer/dotfiles/tree/master/bin
@@ -20,7 +21,7 @@ Highly customized instructions for setting up a new mac to my liking
 * Make iTerm your default terminal in the top menu: iTerm > Make iTerm Default Term
 * Install shell integration & utilities for iTerm in the top menu: iTerm > Install Shell Integration & Utilities
 * Restart iTerm
-* Copy your private and public ssh key(s) to ~/.ssh, then `eval "$(ssh-agent -s)"`, then `ssh-add ~/.ssh/[key]`
+* Copy your private and public ssh key(s) to ~/.ssh, then `eval "$(ssh-agent -s)"`, then `ssh-add -K ~/.ssh/[key]`
 * Create ~/Repos directory
 * Pull this dotfiles repo
 * Change owner of brew executable to root -> `chown root /usr/local/bin/brew`
@@ -37,6 +38,24 @@ Highly customized instructions for setting up a new mac to my liking
 * Run [bootstrap.sh](https://github.com/crittelmeyer/dotfiles/blob/master/bootstrap.sh) as sudo to sync dotfiles/home dir
 * -----
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
+* Under iTerm Preferences > Keys > Hotkey, check "Show/hide iTerm2 with a system-wide hotkey" (leave default Alt+Space)
+* Under iTerm Preferences > Advanced > Mouse, change "Scroll wheel sends arrow keys..." to "Yes"
+* Under Karabiner Preferences > Misc & Uninstall > Custom Setting, click "Open private.xml" and save the following:
+```
+<?xml version="1.0"?>
+    <root>
+    <item>
+        <name>Ctrl Freak</name>
+        <identifier>private.double_ctrl_to_escape</identifier>
+        <autogen>
+            __DoublePressModifier__
+            KeyCode::CONTROL_L, KeyCode::CONTROL_L,
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+</root>
+```
+* Under Karabiner Preferences > Change Key, check "Ctrl Freak" (this maps Ctrl+Ctrl to Esc for easy vim escapes)
 * Add special key mappings to iTerm for vim:
 *   Ctrl+Space     => Send escape sequence: Esc+[29~
 *   Shift+Return   => Send escape sequence: Esc+[27~

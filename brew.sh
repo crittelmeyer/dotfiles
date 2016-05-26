@@ -92,6 +92,7 @@ pip install git+git://github.com/Lokaltog/powerline
 # node modules
 npm install -g bower
 npm install -g cypress-cli
+npm install -g redux-cli
 npm install -g deployd
 npm install -g eslint
 npm install -g mocha
