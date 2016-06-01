@@ -82,6 +82,15 @@ set timeoutlen=1000   " default value
 set ttimeout          " for key codes
 set ttimeoutlen=10    " unnoticeable small value
 
+" save all swap, backup, and undo files in a centralized location so it
+" doesn't clutter up the workspace
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
+
+" make sure backspace works as expected...
+set backspace=indent,eol,start
+
 " turn on matchit macro for navigating open/close
 " structs i.e. html tags
 " extends % command - press % while inside a tag to go to matching tag
