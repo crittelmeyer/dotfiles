@@ -96,6 +96,7 @@ npm install -g redux-cli
 npm install -g deployd
 npm install -g eslint
 npm install -g mocha
+npm install -g npmrc
 
 # Install other useful binaries.
 brew install zsh
