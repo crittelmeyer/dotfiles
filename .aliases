@@ -49,4 +49,11 @@ alias pumpitup="osascript -e 'set volume 7'"
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Seems like tmuxinator used to install a "mux" alias by default, but for some reason it didn't work last
+# time I tried, so here's my alias
 alias mux="tmuxinator"
+
+# Some extras for git
+alias gcx="git commit --fixup"
+alias grbiq="git rebase -i --autosquash"
+alias gcst="git checkout staging"
