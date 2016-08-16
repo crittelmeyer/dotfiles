@@ -114,6 +114,7 @@ brew install tree
 brew install webkit2png
 brew install thefuck
 brew install fortune
+brew install colordiff
 
 # Install tmux/tmuxinator
 brew install tmux
