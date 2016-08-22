@@ -114,6 +114,7 @@ brew install tree
 brew install webkit2png
 brew install thefuck
 brew install fortune
+brew install colordiff
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 
 # Install tmux/tmuxinator
