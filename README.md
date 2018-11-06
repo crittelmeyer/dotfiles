@@ -47,6 +47,7 @@ Highly customized instructions for setting up a new mac to my liking
   cmd+clicking of relative file paths
 * Under iTerm Preferences > Profiles > Advanced > Semantic History select "Open with Editor" and choose an
   editor
+* Might need to: Under iTerm Preferences > Profiles > Text > Unicode - uncheck Unicode version 9 char widths
 * Under Karabiner Preferences > Misc & Uninstall > Custom Setting, click "Open private.xml" and save the following:
 ```
 <?xml version="1.0"?>
