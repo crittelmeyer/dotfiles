@@ -40,6 +40,13 @@ Highly customized instructions for setting up a new mac to my liking
 * Change system keyboard settings and update Caps Lock modifier key to map to Ctrl
 * Under iTerm Preferences > Keys > Hotkey, check "Show/hide iTerm2 with a system-wide hotkey" (leave default Alt+Space)
 * Under iTerm Preferences > Advanced > Mouse, change "Scroll wheel sends arrow keys..." to "Yes"
+* Double-click iTerm to maximize without hiding title bar, go to Window > Save Window Arrangement and save as
+  "Default", then Under iTerm Preferences > General > Startup select "Open Default Window Arrangement"
+* Under iTerm Preferences > Profiles > General > Working Directory select "Directory" and type the default
+  project you will be working in i.e. /Users/chrisrittelmeyer/Repos/fe-xmain-client - this allows
+  cmd+clicking of relative file paths
+* Under iTerm Preferences > Profiles > Advanced > Semantic History select "Open with Editor" and choose an
+  editor
 * Under Karabiner Preferences > Misc & Uninstall > Custom Setting, click "Open private.xml" and save the following:
 ```
 <?xml version="1.0"?>

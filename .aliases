@@ -32,6 +32,9 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 
+# A louder, happier bell sound
+alias bell="afplay /System/Library/Sounds/Ping.aiff -v 7"
+
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
@@ -46,6 +49,9 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 
+# Open up lodash-enabled node repl
+alias lodash="n_ --fp"
+
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
@@ -57,3 +63,11 @@ alias mux="tmuxinator"
 alias gcx="git commit --fixup"
 alias grbiq="git rebase -i --autosquash"
 alias gcst="git checkout staging"
+alias gsy="git submodule sync"
+alias gs="git show"
+alias _gcmsg="git commit --no-verify -m"
+alias _gcx="git commit --no-verify --fixup"
+
+# Quickly show/hide dotfiles
+alias dotOn="defaults write com.apple.finder AppleShowAllFiles 1"
+alias dotOff="defaults write com.apple.finder AppleShowAllFiles 0"

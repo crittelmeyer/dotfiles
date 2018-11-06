@@ -97,6 +97,8 @@ npm install -g deployd
 npm install -g eslint
 npm install -g mocha
 npm install -g npmrc
+npm install -g n_
+npm install -g jest
 
 # Install other useful binaries.
 brew install zsh
