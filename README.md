@@ -24,7 +24,6 @@ Highly customized instructions for setting up a new mac to my liking
 * Make `brew.sh` executable -> `chmod +x brew.sh`
 * Run [brew.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew.sh) as sudo to install common tools
 * Optionally run [brew-ctf.sh](https://github.com/crittelmeyer/dotfiles/blob/master/brew-ctf.sh) to install pentest/ctf tools
-* Change owner of brew executable back to current user
 * Install oh my zsh: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/crittelmeyer/dotfiles/master/.oh-my-zsh/tools/install.sh)"`
 * Run `git submodule init`, `git submodule sync`, `git submodule update`
 * Copy powerline directory to ~/Repos/
