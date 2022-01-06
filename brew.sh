@@ -65,6 +65,7 @@ brew install wget
 brew install gnupg
 
 brew install php
+brew install yarn
 
 # Install more recent versions of some OS X tools.
 brew install vim
