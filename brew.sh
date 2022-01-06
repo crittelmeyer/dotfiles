@@ -58,6 +58,8 @@ brew install wget
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
+brew install php
+
 # Install more recent versions of some OS X tools.
 brew install vim
 brew install grep
