@@ -1,0 +1,54 @@
+# CLI Environment Overview
+
+This file describes the tools, aliases, and CLI conventions installed on this system via dotfiles + chezmoi. Intended for reference by Claude Code and other LLM-based agents.
+
+---
+
+## 🐚 Shell Environment
+
+- **Shell**: zsh
+- **Prompt**: starship
+- **Aliases**: custom aliases for git, docker, aws, tmux, etc.
+- **Terminal**: iTerm2 with Hack Nerd Font
+- **Plugins**:
+  - zsh completions
+  - git autocompletion
+  - zoxide (directory jumper)
+  - fzf (fuzzy finder)
+
+## 🧰 Installed CLI Tools
+
+| Category | Tools |
+|---------|-------|
+| Core Unix | coreutils, moreutils, findutils, gnu-sed |
+| Navigation | tree, fd, zoxide, bat |
+| Search | ripgrep, ack, fzf |
+| Text/Stream | pv, rename, colordiff, jq |
+| Dev Utilities | git, gh, wget, vim, gnupg |
+| Image | imagemagick, jp2a |
+| Other | thefuck, reattach-to-user-namespace |
+
+## 💻 Languages & Package Managers
+
+- **Node.js**: managed with `nvm`, LTS version installed
+- **Python**: system + Homebrew-installed
+- **Docker**: Desktop + CLI installed
+- **brew**: primary package manager
+
+## ⚙️ Notable Apps
+
+- VS Code, Obsidian, Notion, Linear
+- Docker Desktop, Postman, DBeaver
+- Tailscale (on login)
+- Claude Code CLI (global install)
+
+## 🤖 AI Agent Tips
+
+- Claude Code CLI installed globally
+- `cli_context.md` is meant for AI tools to know what's available
+- Scripts, aliases, and environment are managed via `chezmoi`
+
+---
+
+_Last updated: $(date +'%Y-%m-%d')_
+

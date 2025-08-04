@@ -1,0 +1,3 @@
+# Placeholder for dot_zshrc
+
+. "$HOME/.cargo/env"
