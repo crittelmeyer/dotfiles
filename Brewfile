@@ -39,7 +39,6 @@ brew "starship"      # Prompt replacement
 brew "gh"            # GitHub CLI
 brew "jq"            # JSON processor
 
-# 🖥 Terminal + Fonts
-cask "iterm2"
+# 🖥 Fonts
 cask "font-hack-nerd-font"
 

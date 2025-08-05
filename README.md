@@ -12,26 +12,36 @@ Modern dotfiles managed with [chezmoi](https://www.chezmoi.io/), featuring:
 
 ### Prerequisites
 
-- macOS (Intel or Apple Silicon)
-- Git
-- Command Line Tools: `xcode-select --install`
+1. **Download and install [Google Chrome](https://www.google.com/chrome/)**
+2. **Download and install [iTerm2](https://iterm2.com/)**
+3. **Open iTerm2** and run: `xcode-select --install`
 
 ### Installation
 
-```bash
-# Install chezmoi and apply dotfiles
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply crittelmeyer
+From iTerm2, run this one command:
 
-# Or if you've already cloned this repo:
-chezmoi init --apply --source ~/Repos/dotfiles
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply crittelmeyer
 ```
 
 This will:
-1. Ask for your system type (personal/work/video/poker/pentest)
-2. Install Homebrew if needed
-3. Install all packages from Brewfile
-4. Set up your shell environment
-5. Configure all applications
+1. Install chezmoi
+2. Clone this repository
+3. Ask for your system type (personal/work/video/poker/pentest)
+4. Install Homebrew if not present
+5. Install all packages from Brewfile
+6. Install tmuxinator Ruby gem
+7. Configure zsh with zinit and plugins
+8. Set up all dotfiles and configurations
+9. Install fonts (Hack Nerd Font for iTerm2)
+
+### What Gets Installed
+
+- **Shell**: Zsh with zinit, starship prompt, syntax highlighting
+- **Dev Tools**: Git, Node.js, Python, Ruby, Docker
+- **CLI Tools**: tmux, vim, fzf, ripgrep, bat, zoxide, tmuxinator
+- **Apps**: VS Code, Notion, Linear, and more based on system type
+- **Fonts**: Hack Nerd Font for terminal
 
 ## What's Included
 
@@ -119,24 +129,43 @@ Based on your system type selection:
 ```bash
 # Git shortcuts
 g      # git
+gst    # git status
 ga     # git add
 gaa    # git add --all
-gb     # git branch
 gc     # git commit -v
 gco    # git checkout
 gd     # git diff
-gst    # git status
 glog   # git log --oneline --decorate --graph
+gs     # git show
+gcx    # git commit --fixup
+grbiq  # git rebase -i --autosquash
 
 # Directory navigation
-z      # smart cd with zoxide
-zi     # interactive directory selection
-..     # cd ..
-...    # cd ../..
+cd     # Smart cd (uses zoxide for partial matches, pushd for paths)
+z      # Pure zoxide jump
+zi     # Interactive directory selection
+po     # popd - go back in directory history
+d      # Show directory stack
+1-9    # Jump to directory history (cd -1, cd -2, etc)
+md     # mkdir -p (create with parents)
 
-# Enhanced commands
+# File listing
+l      # ls -lah (detailed list with human sizes)
 ll     # ls -alF
-cat    # bat (if available)
+la     # ls -A
+
+# Tmux/Tmuxinator
+tl     # List tmux sessions
+ts     # Create new tmux session
+ta     # Attach to tmux session
+tkss   # Kill tmux session
+mux    # tmuxinator
+
+# System utilities
+ip     # Show public IP
+localip # Show local IP
+show/hide # Toggle hidden files in Finder
+afk    # Lock screen
 ```
 
 ## Customization
@@ -177,10 +206,11 @@ chezmoi apply
 
 ### tmux
 See `dot_tmux.conf` for full bindings. Highlights:
-- `Ctrl+a` - Prefix key (instead of default `Ctrl+b`)
+- `Ctrl+q` - Prefix key (instead of default `Ctrl+b`)
 - `Prefix + |` - Split pane vertically
 - `Prefix + -` - Split pane horizontally
 - `Prefix + r` - Reload config
+- `Prefix + d` or `Prefix + Ctrl+z` - Detach from session
 
 ## Updating
 
