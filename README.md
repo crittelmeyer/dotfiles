@@ -39,7 +39,8 @@ This will:
 
 - **Shell**: Zsh with zinit, starship prompt, syntax highlighting
 - **Dev Tools**: Git, Node.js, Python, Poetry, Ruby, Docker
-- **CLI Tools**: tmux, vim, fzf, ripgrep, bat, zoxide, tmuxinator
+- **CLI Tools**: tmux, vim, fzf, ripgrep, bat, zoxide, tmuxinator, 1Password CLI
+- **Security**: 1Password (desktop app and CLI)
 - **Apps**: VS Code, Notion, Linear, and more based on system type
 - **Fonts**: Hack Nerd Font for terminal
 

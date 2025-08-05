@@ -44,3 +44,7 @@ brew "jq"            # JSON processor
 # 🖥 Fonts
 cask "font-hack-nerd-font"
 
+# 🔐 Password Management
+cask "1password"      # 1Password desktop app
+cask "1password-cli"  # 1Password CLI for terminal
+
