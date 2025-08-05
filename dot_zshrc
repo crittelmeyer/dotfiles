@@ -1,3 +1,132 @@
-# Placeholder for dot_zshrc
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
+# History configuration
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+
+# Basic zsh options
+setopt AUTO_CD              # cd by just typing directory name
+setopt AUTO_PUSHD          # Make cd push old directory onto stack
+setopt PUSHD_IGNORE_DUPS   # No duplicates in dir stack
+setopt PUSHD_SILENT        # No dir stack after pushd or popd
+setopt CORRECT             # Command correction
+setopt COMPLETE_IN_WORD    # Complete from both ends of word
+setopt GLOB_COMPLETE       # Generate glob matches as completions
+
+# Homebrew setup (if on macOS)
+if [[ -f "/opt/homebrew/bin/brew" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -f "/usr/local/bin/brew" ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# Install zinit if not present
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [[ ! -d "$ZINIT_HOME" ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}ZINIT%F{220} (zdharma-continuum/zinit)…%f"
+    command mkdir -p "$(dirname $ZINIT_HOME)" && command chmod g-rwX "$(dirname $ZINIT_HOME)"
+    command git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+
+# Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Load zsh plugins with zinit
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-history-substring-search
+
+# Configure autosuggestions
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+# Key bindings for history substring search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+
+# FZF integration
+if command -v fzf &> /dev/null; then
+    source <(fzf --zsh)
+fi
+
+# Zoxide integration (smarter cd)
+if command -v zoxide &> /dev/null; then
+    eval "$(zoxide init zsh)"
+fi
+
+# Git aliases (similar to oh-my-zsh git plugin)
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gc!='git commit -v --amend'
+alias gca='git commit -v -a'
+alias gcam='git commit -a -m'
+alias gcb='git checkout -b'
+alias gcl='git clone --recursive'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdca='git diff --cached'
+alias gf='git fetch'
+alias gfa='git fetch --all --prune'
+alias gl='git pull'
+alias glog='git log --oneline --decorate --graph'
+alias gloga='git log --oneline --decorate --graph --all'
+alias gm='git merge'
+alias gp='git push'
+alias gpsup='git push --set-upstream origin $(git branch --show-current)'
+alias gr='git remote'
+alias grb='git rebase'
+alias grbi='git rebase -i'
+alias grhh='git reset --hard HEAD'
+alias gst='git status'
+alias gsta='git stash'
+alias gstp='git stash pop'
+
+# Common aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Use bat instead of cat if available
+if command -v bat &> /dev/null; then
+    alias cat='bat'
+fi
+
+# Colored grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Cargo/Rust environment
 . "$HOME/.cargo/env"
+
+# Initialize Starship prompt
+if command -v starship &> /dev/null; then
+    eval "$(starship init zsh)"
+fi
+
+# Load any local configuration
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
