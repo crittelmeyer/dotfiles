@@ -38,7 +38,7 @@ This will:
 ### What Gets Installed
 
 - **Shell**: Zsh with zinit, starship prompt, syntax highlighting
-- **Dev Tools**: Git, Node.js, Python, Ruby, Docker
+- **Dev Tools**: Git, Node.js, Python, Poetry, Ruby, Docker
 - **CLI Tools**: tmux, vim, fzf, ripgrep, bat, zoxide, tmuxinator
 - **Apps**: VS Code, Notion, Linear, and more based on system type
 - **Fonts**: Hack Nerd Font for terminal
@@ -66,6 +66,8 @@ This will:
 - **Git** - Version control with useful aliases
 - **Node.js** - JavaScript runtime
 - **Python** - Latest Python 3
+- **Poetry** - Modern Python dependency management
+- **Ruby** - For gems like tmuxinator
 - **Rust** - Via cargo (for tools like ripgrep, fd, etc.)
 - **Docker** - Containerization
 

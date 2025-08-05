@@ -10,7 +10,9 @@ brew "wget"          # Better than curl in some contexts
 brew "vim"           # Because macOS' vim is ancient
 brew "gnupg"         # GPG signing, encryption
 brew "node"          # For JS/TS dev
-brew "python"        # For Python dev
+brew "python"        # For Python dev (latest)
+brew "python@3.12"   # Python 3.12 for compatibility
+brew "poetry"        # Python dependency management
 brew "ruby"          # For Ruby development and gems
 
 # 🧰 Misc Unix power tools
