@@ -11,6 +11,7 @@ brew "vim"           # Because macOS' vim is ancient
 brew "gnupg"         # GPG signing, encryption
 brew "node"          # For JS/TS dev
 brew "python"        # For Python dev
+brew "ruby"          # For Ruby development and gems
 
 # 🧰 Misc Unix power tools
 brew "tree"

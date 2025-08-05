@@ -31,6 +31,15 @@ elif [[ -f "/usr/local/bin/brew" ]]; then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 
+# Add Homebrew Ruby to PATH if available
+if [[ -d "/opt/homebrew/opt/ruby/bin" ]]; then
+    export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+    export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+elif [[ -d "/usr/local/opt/ruby/bin" ]]; then
+    export PATH="/usr/local/opt/ruby/bin:$PATH"
+    export PATH="/usr/local/lib/ruby/gems/3.4.0/bin:$PATH"
+fi
+
 # Install zinit if not present
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [[ ! -d "$ZINIT_HOME" ]]; then
@@ -101,14 +110,68 @@ alias grhh='git reset --hard HEAD'
 alias gst='git status'
 alias gsta='git stash'
 alias gstp='git stash pop'
+alias gs='git show'
+alias gcx='git commit --fixup'
+alias grbiq='git rebase -i --autosquash'
+alias gcst='git checkout staging'
+alias gsy='git submodule sync'
 
-# Common aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# Smart cd function - uses zoxide for smart jumps, pushd for explicit paths
+cd() {
+    if [[ $# -eq 0 ]]; then
+        # No arguments, go home with pushd
+        pushd ~ > /dev/null
+    elif [[ "$1" =~ ^(/|~|\.|\.\./) ]]; then
+        # Looks like a path (starts with /, ~, ., or ../)
+        pushd "$@" > /dev/null
+    else
+        # Try zoxide first for smart jumping
+        if z "$@" 2>/dev/null; then
+            # If zoxide succeeded, add to directory stack
+            pushd . > /dev/null
+        else
+            # If zoxide failed, fall back to pushd
+            pushd "$@" > /dev/null
+        fi
+    fi
+}
+
+# Directory navigation aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias -- -='cd -'
+alias 1='cd -1'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+alias md='mkdir -p'
+alias rd='rmdir'
+alias d='dirs -v | head -10'
+alias pu='pushd'
+alias po='popd'
+
+# File listing aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -lah'
+
+# Tmux aliases
+alias ta='tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
+
+# Tmuxinator alias
+alias mux='tmuxinator'
 
 # Use bat instead of cat if available
 if command -v bat &> /dev/null; then
@@ -119,6 +182,22 @@ fi
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# System/Utility aliases
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias badge="tput bel"
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume 7'"
+
+# Set default editor
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Cargo/Rust environment
 . "$HOME/.cargo/env"
