@@ -37,10 +37,10 @@ fi
 # Add Homebrew Ruby to PATH if available
 if [[ -d "/opt/homebrew/opt/ruby/bin" ]]; then
     export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-    export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+    for _gembin in /opt/homebrew/lib/ruby/gems/*/bin(N); do export PATH="$_gembin:$PATH"; done
 elif [[ -d "/usr/local/opt/ruby/bin" ]]; then
     export PATH="/usr/local/opt/ruby/bin:$PATH"
-    export PATH="/usr/local/lib/ruby/gems/3.4.0/bin:$PATH"
+    for _gembin in /usr/local/lib/ruby/gems/*/bin(N); do export PATH="$_gembin:$PATH"; done
 fi
 
 # Install zinit if not present
@@ -203,7 +203,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # Cargo/Rust environment
-. "$HOME/.cargo/env"
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 
 # Initialize Starship prompt
 if command -v starship &> /dev/null; then
